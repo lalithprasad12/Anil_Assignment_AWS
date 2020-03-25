@@ -3,27 +3,27 @@ node
 {
      stage('Checkout')
     {
-        lalith_checkout()
+        echo "Checkout the code"
     }
 
     stage('Static Code Analysis')
     {
-        lalith_static_code()
+        echo "Static Analysis the code"
     }
 
      stage('Build')
     {
-        lalith_build()
+        echo "Build the code"
     }
     
      stage('Unit Testing')
     {
-        lalith_unit_test()
+        echo "Test the code"
     }
 
      stage('Deploy')
     {
-        lalith_deploy()
+        echo "Deploy the code"
     }
 
 }
